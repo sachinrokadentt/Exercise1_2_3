@@ -1,9 +1,8 @@
+package Employee;
+
+import Employee.Employee;
 import junit.framework.TestCase;
 import org.junit.Before;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-import java.util.Arrays;
-import java.util.Collection;
 
 
 public class EmployeeTest extends TestCase {

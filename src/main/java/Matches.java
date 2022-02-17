@@ -16,7 +16,7 @@ public class Matches { // Separate class for (main method and logic) which acces
             String resultTeamName;             //ResultCSV TeamName
             String matchResult;                //Result like win,drawn,lose from result csv
             String linesInTeamFile = "";       //Variable to store single line read from csv
-            String sport;                       //Variable store Team Category
+            String sport;                       //Variable store Matches.Team Category
             String[] teams;                    //Array store linesInTeamFile content like which sport,teamName,points
 
 
@@ -43,7 +43,7 @@ public class Matches { // Separate class for (main method and logic) which acces
                     footballObj.add(new FootballTeam(points, teamName));
                 }
                 //Printing Teams.csv files content.
-                System.out.println("[Sport Name=" + sport + ", Team Name=" + teamName + ", Point=" + points + "]");
+                System.out.println("[Sport Name=" + sport + ", Matches.Team Name=" + teamName + ", Point=" + points + "]");
 
             }//while loop for teams.csv ends
 
@@ -72,7 +72,7 @@ public class Matches { // Separate class for (main method and logic) which acces
                 }
 
                 //Printing result.csv files content.
-                System.out.println("[Team Name: " + resultTeamName + ", " + "MatchResult: " + matchResult + "]");
+                System.out.println("[Matches.Team Name: " + resultTeamName + ", " + "MatchResult: " + matchResult + "]");
 
             } //while loop for result.csv ends
 
@@ -82,7 +82,7 @@ public class Matches { // Separate class for (main method and logic) which acces
             Collections.sort(basketObj, new BasketballTeam());
             System.out.println("Basketball sport details(After Ordering):");
             for (BasketballTeam basketball : basketObj) {
-                System.out.println("[Team Name=" + basketball.getTeamName() + ", Point=" + basketball.basketballPoints + "]");
+                System.out.println("[Matches.Team Name=" + basketball.getTeamName() + ", Point=" + basketball.basketballPoints + "]");
             }
 
             //Ordering the arrayList of type-class by points. Using comparator interface implemented by FootballTeam which has compare method.
@@ -90,7 +90,7 @@ public class Matches { // Separate class for (main method and logic) which acces
             Collections.sort(footballObj, new FootballTeam());
             System.out.println("Football sport details(After Ordering):");
             for (int i = 0; i < footballObj.size(); i++) {
-                System.out.println("[Team Name=" + footballObj.get(i).getTeamName() + ", Point=" + footballObj.get(i).getPoints() + "]");
+                System.out.println("[Matches.Team Name=" + footballObj.get(i).getTeamName() + ", Point=" + footballObj.get(i).getPoints() + "]");
             }
 
 //Update the Basketball Arraylist by adding the point returns from updatePoints method of BasketballClass.
@@ -141,7 +141,7 @@ public class Matches { // Separate class for (main method and logic) which acces
             System.out.println();
             System.out.println("Football sport details(After adding points):");
             for (int i = 0; i < footballObj.size(); i++) {
-                System.out.println("[Team Name=" + footballObj.get(i).getTeamName() + ", Point=" + footballObj.get(i).getPoints() + "]");
+                System.out.println("[Matches.Team Name=" + footballObj.get(i).getTeamName() + ", Point=" + footballObj.get(i).getPoints() + "]");
             }
 
 
@@ -150,7 +150,7 @@ public class Matches { // Separate class for (main method and logic) which acces
             Collections.sort(basketObj, new BasketballTeam());
             System.out.println("Basketball sport details(After adding Points):");
             for (BasketballTeam basketball : basketObj) {
-                System.out.println("[Team Name=" + basketball.getTeamName() + ", Point=" + basketball.basketballPoints + "]");
+                System.out.println("[Matches.Team Name=" + basketball.getTeamName() + ", Point=" + basketball.basketballPoints + "]");
             }
 
 

@@ -1,3 +1,6 @@
+package ShapesTest;
+
+import Shapes.Shapes;
 import junit.framework.TestCase;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -61,7 +64,7 @@ public class ShapesTestParameterize extends TestCase {
     }
     @org.junit.Test
     public void testPerimeterOfCircle() {
-        assertEquals(circlePerimeter,Shapes.perimeterOfCircle(radius),0.1);
+        assertEquals(circlePerimeter, Shapes.perimeterOfCircle(radius),0.1);
 
     }
     @org.junit.Test

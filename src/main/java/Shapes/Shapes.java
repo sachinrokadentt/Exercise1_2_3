@@ -1,4 +1,4 @@
-//importing Scanner I/O Class from util package for accepting user input.
+package Shapes;//importing Scanner I/O Class from util package for accepting user input.
 import java.util.InputMismatchException;
 import java.util.Scanner;
 

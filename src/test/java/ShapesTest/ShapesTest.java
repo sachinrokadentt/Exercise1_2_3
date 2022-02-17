@@ -1,3 +1,6 @@
+package ShapesTest;
+
+import Shapes.Shapes;
 import junit.framework.TestCase;
 
 public class ShapesTest extends TestCase {
@@ -9,7 +12,7 @@ public class ShapesTest extends TestCase {
 
     public void testPerimeterOfSquare() {
         assertEquals(16,Shapes.perimeterOfSquare(4),0);
-        assertEquals(0,Shapes.perimeterOfSquare(-34),0);
+        assertEquals(0, Shapes.perimeterOfSquare(-34),0);
     }
 
     public void testAreaOfCircle() {

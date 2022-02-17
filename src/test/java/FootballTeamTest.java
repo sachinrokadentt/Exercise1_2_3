@@ -1,30 +1,29 @@
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class FootballTeamTest {
     private FootballTeam football;
 
     @Before
     public void setUp(){
-        football =new FootballTeam(10,"Delhi Team");
+        football =new FootballTeam(10,"Delhi Matches.Team");
     }
     @Test
     public void getTeamName() {
-        assertEquals("Delhi Team", football.getTeamName());
+        Assert.assertEquals("Delhi Matches.Team", football.getTeamName());
     }
 
     @Test
     public void getPoints() {
-        assertEquals(10, football.getPoints());
+        Assert.assertEquals(10, football.getPoints());
     }
 
     @Test
     public void updatePoints() {
-        assertEquals(3, football.updatePoints("Win"));
-        assertEquals(1, football.updatePoints("Drawn"));
-        assertEquals(0, football.updatePoints("Lose"));
+        Assert.assertEquals(3, football.updatePoints("Win"));
+        Assert.assertEquals(1, football.updatePoints("Drawn"));
+        Assert.assertEquals(0, football.updatePoints("Lose"));
 
     }
 }

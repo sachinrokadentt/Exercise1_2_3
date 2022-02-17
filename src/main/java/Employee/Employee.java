@@ -1,4 +1,4 @@
-//importing Scanner I/O Class from util package for accepting user input.
+package Employee;//importing Scanner I/O Class from util package for accepting user input.
 import java.util.Scanner;
 
 public class Employee {
@@ -37,7 +37,7 @@ public class Employee {
 
 
 //Accepting input from user for each employee details
-        System.out.println("Enter the input for number of Employee (ex. 3 for 3 peoples):");
+        System.out.println("Enter the input for number of Employee.Employee (ex. 3 for 3 peoples):");
         int numberOfEmployee=scanner.nextInt();
 
 //Loop for number of employee, Accepting user-input for declared variables
@@ -55,7 +55,7 @@ public class Employee {
             emp.computeBaseSalary();
             emp.addSal();
             emp.addWork();
-            System.out.println("The computed Final Salary of Employee named:-"+name+" is "+emp.baseSalary+"$");
+            System.out.println("The computed Final Salary of Employee.Employee named:-"+name+" is "+emp.baseSalary+"$");
 
         }
     }//Main method bracket ends
