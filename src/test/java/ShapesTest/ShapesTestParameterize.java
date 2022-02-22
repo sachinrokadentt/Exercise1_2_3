@@ -1,6 +1,5 @@
 package ShapesTest;
-
-import Shapes.Shapes;
+import Shapes.*;
 import junit.framework.TestCase;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -21,7 +20,9 @@ public class ShapesTestParameterize extends TestCase {
     private double rectanglePerimeter=0;
 
 
-    private Shapes shapes;
+    private Shape sCircle=new Circle();
+    private Shape sSquare=new Square();
+    private Shape sRectangle=new Rectangle();
 
     public ShapesTestParameterize(double length, double breadth, double height, double radius, double circleArea, double circlePerimeter, double squareArea, double squarePerimeter, double rectangleArea, double rectanglePerimeter) {
         this.length = length;
@@ -49,32 +50,32 @@ public class ShapesTestParameterize extends TestCase {
 
     @org.junit.Test
     public void testAreaOfSquare() {
-        assertEquals(squareArea, Shapes.areaOfSquare(length), 0);
+        assertEquals(squareArea, sSquare.area(length), 0);
 
     }
     @org.junit.Test
     public void testPerimeterOfSquare() {
-        assertEquals(squareArea, Shapes.perimeterOfSquare(length), 0);
+        assertEquals(squareArea, sSquare.perimeter(length), 0);
 
     }
     @org.junit.Test
     public void testAreaOfCircle() {
-        assertEquals(circleArea,Shapes.areaOfCircle(radius),0.1);
+        assertEquals(circleArea,sCircle.area(radius),0.1);
 
     }
     @org.junit.Test
     public void testPerimeterOfCircle() {
-        assertEquals(circlePerimeter, Shapes.perimeterOfCircle(radius),0.1);
+        assertEquals(circlePerimeter, sCircle.perimeter(radius),0.1);
 
     }
     @org.junit.Test
     public void testAreaOfRectangle() {
-        assertEquals(rectangleArea,Shapes.areaOfRectangle(height,breadth),0);
+        assertEquals(rectangleArea,sRectangle.area(height,breadth),0);
 
     }
     @org.junit.Test
     public void testPerimeterOfRectangle() {
-        assertEquals(rectanglePerimeter,Shapes.perimeterOfRectangle(height,breadth),0);
+        assertEquals(rectanglePerimeter,sRectangle.perimeter(height,breadth),0);
 
     }
 

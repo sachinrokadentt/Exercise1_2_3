@@ -52,11 +52,21 @@ Program to print the perimeter and the area of a square, a rectangle and a circl
 2. Print result like area and perimeter of shapes on screen.
 
 <h3 align="left">Run Program:</h3>
-Run Shapes.Shapes.java class - To print the required output.
+Run Main.java class - To print the required output.
 
 ##### Classes Details
-1Code logic for this exercise is in [Shapes.Shapes.java] class. Normal and parametrize test are performed on code logic.
-- Shapes.Shapes.java Location: "src\\main\\java\\Shapes\\Shapes.java"
+- Shape -Interface
+- Main  -Class (main method)
+- Circle -Class
+- Square -Class
+- Rectangle -Class
+
+1Code logic for this exercise is in [Shapes.Main.java] class. Normal and parametrize test are performed on code logic.
+- Shape.java Location: "src\\main\\java\\Shapes\\Shape.java"
+- Main.java Location: "src\\main\\java\\Shapes\\Main.java"
+- Circle.java Location: "src\\main\\java\\Shapes\\Circle.java"
+- Square.java Location: "src\\main\\java\\Shapes\\Square.java"
+- Rectangle.java Location: "src\\main\\java\\Shapes\\Rectangle.java"
 
 2 Test Cases for logic return in ShapesTest.ShapesTest.java and ShapesTest.ShapesTestParameterize.java.
 - ShapesTest.ShapesTest Location:"src\\test\\java\\ShapesTest.ShapesTest"

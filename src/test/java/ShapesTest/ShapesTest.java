@@ -1,39 +1,50 @@
 package ShapesTest;
 
-import Shapes.Shapes;
+import Shapes.*;
 import junit.framework.TestCase;
+import org.junit.Before;
 
 public class ShapesTest extends TestCase {
+    private Shape sCircle;
+    private Shape sSquare;
+    private Shape sRectangle;
+
+    @Before
+    public void setUp(){
+        sCircle=new Circle();
+        sSquare=new Square();
+        sRectangle=new Rectangle();
+    }
 
     public void testAreaOfSquare() {
-        assertEquals(16,Shapes.areaOfSquare(4),0);
-        assertEquals(0,Shapes.areaOfSquare(-2),0);
+        assertEquals(16,sSquare.area(4),0);
+        assertEquals(0,sSquare.area(-2),0);
     }
 
     public void testPerimeterOfSquare() {
-        assertEquals(16,Shapes.perimeterOfSquare(4),0);
-        assertEquals(0, Shapes.perimeterOfSquare(-34),0);
+        assertEquals(16,sSquare.perimeter(4),0);
+        assertEquals(0, sSquare.perimeter(-34),0);
     }
 
     public void testAreaOfCircle() {
-        assertEquals(7.06,Shapes.areaOfCircle(1.5),0.1);
-        assertEquals(0,Shapes.areaOfCircle(-11.5),0.1);
+        assertEquals(7.06,sCircle.area(1.5),0.1);
+        assertEquals(0,sCircle.area(-11.5),0.1);
     }
 
     public void testPerimeterOfCircle() {
-        assertEquals(9.42,Shapes.perimeterOfCircle(1.5),0.1);
-        assertEquals(0,Shapes.perimeterOfCircle(-2.5),0.1);
+        assertEquals(9.42,sCircle.perimeter(1.5),0.1);
+        assertEquals(0,sCircle.perimeter(-2.5),0.1);
     }
 
     public void testAreaOfRectangle() {
-        assertEquals(6,Shapes.areaOfRectangle(3,2),0);
-        assertEquals(0,Shapes.areaOfRectangle(-13,2),0);
-        assertEquals(0,Shapes.areaOfRectangle(3,-12),0);
+        assertEquals(6,sRectangle.area(3,2),0);
+        assertEquals(0,sRectangle.area(-13,2),0);
+        assertEquals(0,sRectangle.area(3,-12),0);
     }
 
     public void testPerimeterOfRectangle() {
-        assertEquals(10,Shapes.perimeterOfRectangle(3,2),0);
-        assertEquals(4,Shapes.perimeterOfRectangle(-33,2),0);
-        assertEquals(6,Shapes.perimeterOfRectangle(3,-22),0);
+        assertEquals(10,sRectangle.perimeter(3,2),0);
+        assertEquals(4,sRectangle.perimeter(-33,2),0);
+        assertEquals(6,sRectangle.perimeter(3,-22),0);
     }
 }
